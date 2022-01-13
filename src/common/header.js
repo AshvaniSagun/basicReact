@@ -11,7 +11,7 @@ const Header = () => (
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <li className="nav-item nav-link active" href="#"> <Link to="/">Home</Link><span className="sr-only">(current)</span></li>
+          <li className="nav-item nav-link active" href="#"> <Link to="/">Home</Link><span className="sr-only"></span></li>
           <li className="nav-item nav-link" href="#">  <Link to="getApi">Get Request</Link></li>
           <li className="nav-item nav-link" href="#">Pricing</li>
           <li className="nav-item nav-link disabled" href="#">Disabled</li>
