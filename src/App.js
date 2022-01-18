@@ -1,5 +1,5 @@
 import './App.css';
-import Header from "./components/common/header";
+import Navbar from "./components/common/navbar";
 import Main from "./components/common/main";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/@popperjs/core/dist/umd/popper.min.js';
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Header />
+        <Navbar title="Home" otherNavs={{ link1: "Get Request", link2: "Pricing", link3: "Disabled" }} />  {/* Passing single and multiple props */}
         <Main />
       </header>
     </div>
