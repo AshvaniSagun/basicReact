@@ -1,9 +1,10 @@
 import React from 'react';
-import goAround from '../assets/goAround.jpg';
-import scene from '../assets/scene.jpg';
-import adventure from '../assets/adventure.jpg';
+import goAround from '../../assets/goAround.jpg';
+import scene from '../../assets/scene.jpg';
+import adventure from '../../assets/adventure.jpg';
 import '../home/home.scss';
 class Home extends React.Component {
+   
     constructor(props) {
         super(props);
 

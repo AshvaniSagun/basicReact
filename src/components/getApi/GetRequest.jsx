@@ -28,6 +28,7 @@ class GetRequest extends React.Component {
     sayHello() {
         alert('Hello!');
     }
+    
 
     render() {
         return (
@@ -57,4 +58,4 @@ class GetRequest extends React.Component {
     }
 }
 
-export { GetRequest };
+export default GetRequest;
