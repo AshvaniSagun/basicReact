@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar title="Home" otherNavs={{ link1: "Get Request", link2: "Pricing", link3: "Disabled" }} />  {/* Passing single and multiple props */}
+        <Navbar title ="Home" otherNavs = {{link1:"Get Request", link2:"Topics",link3:"Disabled"}}/>  {/* Passing single and multiple props */}
         <Main />
       </header>
     </div>
