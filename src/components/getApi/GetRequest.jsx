@@ -1,5 +1,3 @@
-import { isDisabled } from '@testing-library/user-event/dist/utils';
-import bootstrapMin from 'bootstrap/dist/js/bootstrap.min';
 import React from 'react';
 import '../getApi/getApi.scss';
 
