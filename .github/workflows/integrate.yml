@@ -2,8 +2,13 @@
 name: React Continuous Integration
 
 
+# on:
+#   pull_request:
+#     branches: [ master ]
+
+
 on:
-  pull_request:
+  push:
     branches: [ master ]
 
 
@@ -17,3 +22,4 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm run build
+      - run: npm run deploy
