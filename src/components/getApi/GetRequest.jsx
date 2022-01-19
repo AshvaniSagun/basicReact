@@ -31,7 +31,7 @@ class GetRequest extends React.Component {
     render() {
         return (
             <div className="">
-                <h5 className="">Practice of Simple GET Request Api</h5>
+                <h5 className="">A Simple GET Request Api</h5>
                 <div className="">
                     <table id="customers">
                         <tbody>
