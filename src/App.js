@@ -2,7 +2,6 @@ import './App.css';
 import Navbar from "./components/common/navbar";
 import Main from "./components/common/main";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/@popperjs/core/dist/umd/popper.min.js';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 function App() {
