@@ -1,4 +1,6 @@
-name: Node Continuous Integration
+
+name: React Continuous Integration
+
 
 on:
   pull_request:
