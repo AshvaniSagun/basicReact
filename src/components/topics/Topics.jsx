@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 export default function Topics() {
-    const [text, setText] = useState('Hello There !!');
+    const [text, setText] = useState('Hey There !!');
 
     const changeText = function() {
         let newText = text.toUpperCase();
