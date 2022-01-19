@@ -6,7 +6,6 @@ name: React Continuous Integration
 #   pull_request:
 #     branches: [ master ]
 
-
 on:
   push:
     branches: [ master ]
