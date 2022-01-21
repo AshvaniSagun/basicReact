@@ -2,15 +2,17 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Home } from '../home/home'; //Example of named export.
 import  GetRequest from '../getApi/GetRequest';
-import Topics from '../../components/topics/Topics';  //Its an ES6 feature called default export.
+import Editor from '../editor/Editor';  //Its an ES6 feature called default export.
+import About from '../about/About';
 
 //The / route will only match when the pathname is exactly the string "/"
 const Main = () => (
   <main>
     <Routes>
       <Route  path="/" element={ <Home/>} />
-      <Route  path="/topics" element={<Topics/>} />
+      <Route  path="/editor" element={<Editor/>} />
       <Route  path="/getApi" element={<GetRequest/>} />
+      <Route  path="/about" element={<About/>} />
     </Routes>
   </main>
 );
