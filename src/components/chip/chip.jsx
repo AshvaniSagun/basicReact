@@ -16,8 +16,8 @@ export default function ChipDemo() {
             <div className="input-group">
                 <Chips placeholder="Type to search" value={values} max={4} onChange={(e) => setValues(e.value)} />
                 <i onClick={clearAllChips} tooltip="Clear all chips" className="pi pi-times cross-button"></i>
-                <span style={{ cursor: "pointer" }} className="p-inputgroup-addon"><img src={search} /></span>
-                <span style={{ cursor: "pointer" }} className="p-inputgroup-addon"> <img src={download} /></span>
+                <span style={{ cursor: "pointer" }} className="p-inputgroup-addon"><img alt="SearchIcon" src={search} /></span>
+                <span style={{ cursor: "pointer" }} className="p-inputgroup-addon"> <img alt="DownloadIcon" src={download} /></span>
             </div>
         </div>
     )
