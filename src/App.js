@@ -3,6 +3,9 @@ import Navbar from "./components/common/navbar";
 import Main from "./components/common/main";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
+import "primereact/resources/themes/lara-light-indigo/theme.css";  
+import "primereact/resources/primereact.min.css";                  
+import "primeicons/primeicons.css";   
 
 function App() {
   return (
