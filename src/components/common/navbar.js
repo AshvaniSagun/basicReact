@@ -16,7 +16,7 @@ export default function Navbar(props) {
             <li className="nav-item nav-link" href="#">  <Link to="getApi">{props.otherNavs.link1}</Link></li>
             <li className="nav-item nav-link" href="#"><Link to="editor">{props.otherNavs.link2}</Link></li>
             <li className="nav-item nav-link" href="#">  <Link to="about">{props.otherNavs.link3}</Link></li>
-            {/* <li className="nav-item nav-link disabled" href="#">{props.otherNavs.link3}</li> */}
+            <li className="nav-item nav-link" href="#">  <Link to="chip">{props.otherNavs.link4}</Link></li>
           </div>
         </div>
       </nav>
