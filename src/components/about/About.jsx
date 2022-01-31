@@ -1,44 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Chip from '@mui/material/Chip';
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+
+const ChipItem = styled('li')(({ theme }) => ({
+    margin: theme.spacing(0.5),
+}));
 
 export default function About() {
+
+    const [chipData, setChipData] = useState([
+        { key: 0, label: '10lab' },
+        { key: 1, label: 'text1' },
+        { key: 2, label: 'text2' },
+        { key: 3, label: 'text3' },
+        { key: 4, label: 'text4' },
+    ]);
+
+    const handleDelete = (chipToDelete) => () => {
+        setChipData((chips) => chips.filter((chip) => chip.key !== chipToDelete.key));
+    };
+
+    const clearAllChips = () => {
+        setChipData([]);
+    };
+
     return (
-        <div className="accordion" id="accordionExample">
-            <div className="accordion-item">
-                <h2 className="accordion-header" id="headingOne">
-                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                         Item #1
-                    </button>
-                </h2>
-                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <Paper
+            sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                flexWrap: 'wrap',
+                listStyle: 'none',
+                p: 0.5,
+                m: 0,
+            }}
+            component="ul"
+        >
+            {chipData.map((data) => {
+                let icon;
+                return (
+                    <div>
+                        <ChipItem key={data.key}>
+                            <Chip
+                                icon={icon}
+                                label={data.label}
+                                onDelete={data.label === 'React' ? undefined : handleDelete(data)}
+                            />
+                        </ChipItem>
                     </div>
-                </div>
+                );
+            })}
+            <div onClick={clearAllChips}>
+                <svg style={{ height: 100 + '%', width: 2.4 + 'em' }} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
             </div>
-            <div className="accordion-item">
-                <h2 className="accordion-header" id="headingTwo">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                         Item #2
-                    </button>
-                </h2>
-                <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
-            <div className="accordion-item">
-                <h2 className="accordion-header" id="headingThree">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                         Item #3
-                    </button>
-                </h2>
-                <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
-        </div>
+        </Paper>
     )
 }
