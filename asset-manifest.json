@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/basicReact/static/css/main.ee13ea1e.css",
-    "main.js": "/basicReact/static/js/main.a49bdf5d.js",
+    "main.css": "/basicReact/static/css/main.b6556030.css",
+    "main.js": "/basicReact/static/js/main.db58e760.js",
     "static/js/787.28cb0dcd.chunk.js": "/basicReact/static/js/787.28cb0dcd.chunk.js",
     "static/media/scene.jpg": "/basicReact/static/media/scene.3ad5d0471043813f07e1.jpg",
     "static/media/primeicons.svg": "/basicReact/static/media/primeicons.c6e2053303524e39530c.svg",
@@ -23,12 +23,12 @@
     "static/media/download.svg": "/basicReact/static/media/download.a089898fef3ded72ceca46dc76e36bb3.svg",
     "index.html": "/basicReact/index.html",
     "static/media/search.svg": "/basicReact/static/media/search.e3618520b8757fe7169769ad72c0e86e.svg",
-    "main.ee13ea1e.css.map": "/basicReact/static/css/main.ee13ea1e.css.map",
-    "main.a49bdf5d.js.map": "/basicReact/static/js/main.a49bdf5d.js.map",
+    "main.b6556030.css.map": "/basicReact/static/css/main.b6556030.css.map",
+    "main.db58e760.js.map": "/basicReact/static/js/main.db58e760.js.map",
     "787.28cb0dcd.chunk.js.map": "/basicReact/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee13ea1e.css",
-    "static/js/main.a49bdf5d.js"
+    "static/css/main.b6556030.css",
+    "static/js/main.db58e760.js"
   ]
 }
